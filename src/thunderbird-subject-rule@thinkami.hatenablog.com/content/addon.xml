@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<bindings id="addonBindings"
+   xmlns="http://www.mozilla.org/xbl"
+   xmlns:html="http://www.w3.org/1999/xhtml"
+   xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+   xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <binding id="addonBinding">
+    <resources>
+      <stylesheet src="chrome://thunderbird-subject-rule/content/addon.css"/>
+    </resources>
+    <content popup="_child">
+      <children/>
+      <xul:stack flex="1">
+        <xul:hbox align="center">
+          <!-- ボタンのスタイルを指定 -->
+          <xul:image class="addon-button-image" xbl:inherits="src"/>
+        </xul:hbox>
+        <xul:hbox align="center">
+          <!-- 押せるボタンと分かるよう、もう一つスタイルを指定 -->
+          <xul:image class="addon-button-dropmarker"/>
+        </xul:hbox>
+      </xul:stack>
+    </content>  
+  </binding>
+
+</bindings>

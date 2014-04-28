@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <!-- em:idには拡張の含まれるディレクトリと同じ名称をつける -->
+    <em:id>thunderbird-subject-rule@thinkami.hatenablog.com</em:id>
+    <em:type>2</em:type>
+    <!-- 拡張の名前を記載 -->
+    <em:name>thunderbird-subject-rule</em:name>
+    <em:version>1.0</em:version>
+    <em:description>「メールの件名の先頭に日付をつける」ボタンを件名欄に追加し、ルールを適用する</em:description>
+    <em:creator>thinkAmi</em:creator>
+    <em:homepageURL>https://github.com/thinkAmi/thunderbird-subject-rule</em:homepageURL>
+    <em:targetApplication>
+      <!-- Thunderbird -->
+      <!-- See: https://addons.mozilla.org/en-US/firefox/pages/appversions/ -->
+      <Description>
+        <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
+        <em:minVersion>2.0b1</em:minVersion>
+        <em:maxVersion>32.0</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+
+</RDF>

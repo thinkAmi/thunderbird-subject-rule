@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <textbox id="msgSubject">
+    <!-- idのスタイルは、addon.cssにて指定できる -->
+    <!-- styleで、xml内のどのbindingを使うかを指定 -->
+    <button popup="_child"
+     type="menu"
+     id="addon-button"
+     style="-moz-binding: url('chrome://thunderbird-subject-rule/content/addon.xml#addonBinding');">
+      <menupopup>
+        <!-- スクリプトの量が増えたので、別のjsファイルを指定しておく -->
+        <script src="chrome://thunderbird-subject-rule/content/overlay.js"/>
+        <!-- oncommandにて、ボタンを押した時に起動するjs内のfunctionを指定する -->
+        <menuitem label="設定" accesskey="R" oncommand="addonCommand(this);"/>
+      </menupopup>
+    </button>
+  </textbox>
+</overlay>

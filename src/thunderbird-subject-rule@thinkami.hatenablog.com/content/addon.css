@@ -1,0 +1,19 @@
+#addon-button  {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -moz-margin-start: 0px;
+  -moz-margin-end: 2px;
+  cursor: default;
+}
+.addon-button-image {
+  margin: 0px;
+  /* 自分で用意したボタンの画像を指定 */
+  list-style-image: url("chrome://thunderbird-subject-rule/content/img/shinanogold.png");
+}
+.addon-button-dropmarker {
+  /* ボタンの画像が大きいので、先頭からのマージンを広めに取っておく */
+  -moz-margin-start: 45px;
+  margin-top: 5px;
+  /* 標準で用意されているっぽい下向きのボタンの画像を指定 */
+  list-style-image: url("chrome://messenger/skin/icons/search-arrow.gif");
+}
